@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import { ProgressPlugin } from 'webpack';
 import './index.html';
 import Joke from './Joke';
+import jokes from './jokes.js';
+import './style.css';
 
 const App = () => {
   return (
