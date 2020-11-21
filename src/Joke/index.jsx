@@ -9,7 +9,7 @@ const Joke = (props) => {
     <div class="joke">
       <div class="joke__body">
         <div class="joke__user">
-          <img class="user-avatar" src={assets / img / [props.userId].png} />
+          <img class="user-avatar" src={`assets/img/${props.userId}.png`}/>
           <p class="user-name">{props.userName}</p>
         </div>
 
@@ -25,7 +25,7 @@ const Joke = (props) => {
           {props.likes}
         </span>
         <button
-          onClick={() => setLiked(liked + 1)}
+          onClick={() => setDisliked(disliked + 1)}
           id="btn-down"
           class="btn-like btn-like--down"
         ></button>
