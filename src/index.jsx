@@ -7,14 +7,16 @@ import Joke from './Joke';
 const App = () => {
   return (
     <>
-    {jokes.map((joke)=> (
-      <Joke
-        userId={joke.id}
-        userName={joke.name}
-        text={joke.text}
-        likes={joke.likes}
-        dislikes= {joke.dislikes}
-      />
+      {jokes.map((joke) => (
+        <Joke
+          userId={joke.id}
+          userName={joke.name}
+          text={joke.text}
+          likes={joke.likes}
+          dislikes={joke.dislikes}
+        />
+      ))}
+      ;
     </>
   );
 };
